@@ -1,6 +1,4 @@
-const fs = require('fs');
 
-const readmeContent = `
 # Blog Application
 
 This Blog Application is a full-stack web application that allows users to create, edit, and delete blog posts. The application includes user authentication using JWT (JSON Web Token) and features a user-friendly interface built with React.js, CSS, and HTML. The backend is powered by Node.js, Express, and MongoDB.
@@ -16,16 +14,19 @@ This Blog Application is a full-stack web application that allows users to creat
 ## Screenshots
 
 ### Home Page
-![Home Page](path/to/homepage-screenshot.png)
+![Screenshot (1219)](https://github.com/Harsh2191/blog-app/assets/149939528/ae711e2b-328e-49dc-a6b7-b5c934ff68f0)
+
 
 ### Create Post
-![Create Post](path/to/create-post-screenshot.png)
+![Screenshot (1226)](https://github.com/Harsh2191/blog-app/assets/149939528/c3734e46-f756-468a-9e7e-25a21d1d6e59)
+
 
 ### Edit Post
-![Edit Post](path/to/edit-post-screenshot.png)
+![Screenshot (1224)](https://github.com/Harsh2191/blog-app/assets/149939528/cf18c27e-09cc-47f2-bdd1-95ba455aaaa5)
+
 
 ### User Authentication
-![User Authentication](path/to/user-authentication-screenshot.png)
+![Screenshot (1222)](https://github.com/Harsh2191/blog-app/assets/149939528/b4f69aec-130e-4fbd-a4de-3aab10a8c6d6)
 
 ## Technologies Used
 
@@ -39,63 +40,8 @@ This Blog Application is a full-stack web application that allows users to creat
   - MongoDB
   - JWT (JSON Web Token)
 
-## Installation
-
-1. Clone the repository:
-   \`\`\`sh
-   git clone https://github.com/yourusername/blog-application.git
-   \`\`\`
-
-2. Navigate to the project directory:
-   \`\`\`sh
-   cd blog-application
-   \`\`\`
-
-3. Install frontend dependencies:
-   \`\`\`sh
-   cd client
-   npm install
-   \`\`\`
-
-4. Install backend dependencies:
-   \`\`\`sh
-   cd ../server
-   npm install
-   \`\`\`
-
-5. Create a \`.env\` file in the \`server\` directory and add your MongoDB URI and JWT secret:
-   \`\`\`env
-   MONGO_URI=your_mongo_db_uri
-   JWT_SECRET=your_jwt_secret
-   \`\`\`
-
-6. Start the backend server:
-   \`\`\`sh
-   npm start
-   \`\`\`
-
-7. Start the frontend development server:
-   \`\`\`sh
-   cd ../client
-   npm start
-   \`\`\`
-
-## Usage
-
-1. Open the browser and navigate to \`http://localhost:3000\`.
-2. Register a new account or log in with existing credentials.
-3. Create, edit, and delete your blog posts.
-
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your changes. For major changes, please open an issue to discuss what you would like to change.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-`;
-
-fs.writeFile('README.md', readmeContent, (err) => {
-  if (err) throw err;
-  console.log('README.md has been created!');
-});
